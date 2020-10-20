@@ -72,7 +72,9 @@ Screentshot of the update admin page to send user details from the server 1 app 
 
 3.Open the folder path *server_1 > config* and change to your own database settings in the file “dbaccess.php”. Note that these settings shall be applicable for the database for your server 1 app.
 
-4. In the same config folder for the server 1 app, open the file “settings.ini” and change the API URLs to suit your own server paths to each file. Note! Ensure you only change the URL: <img src="https://diagrams.annice.se/php-rest-api-jwt-auth-1.2/api-url.png" alt="" width="600">
+4. In the same config folder for the server 1 app, open the file “settings.ini” and change the API URLs to suit your own server paths to each file. Note! Ensure you only change the URL:
+
+<img src="https://diagrams.annice.se/php-rest-api-jwt-auth-1.2/api-url.png" alt="" width="600">
 
 5. Repeat steps 3-4 above but now for the “server_2” folder to edit its config files to suit the settings applied for your server 2 app.
 
