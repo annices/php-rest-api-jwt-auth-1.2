@@ -1,7 +1,4 @@
 <?php
-// Show error reporting:
-error_reporting(E_ALL);
- 
 // Set your default time-zone:
 date_default_timezone_set('Europe/Berlin');
  
