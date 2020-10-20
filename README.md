@@ -43,7 +43,7 @@ The following features and functions are supported by this script:
    * Form validation.
 
 ## 4.1 Updates to version 1.2
-* Added logout endpoint to server 2 app to clear logged in user email on logout requests sent from the server 1 app. This was ensure user data is not exposed to anonymous users.
+* Added logout endpoint to server 2 app to clear logged in user email on logout requests sent from the server 1 app.
 
 ---
   
