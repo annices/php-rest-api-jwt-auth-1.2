@@ -70,7 +70,7 @@ Screentshot of the update admin page to send user details from the server 1 app 
 
 2. Open the file “sql_server_2.sql” and execute its MySQL code on your chosen server 2.
 
-3.Open the folder path *server_1 > config* and change to your own database settings in the file “dbaccess.php”. Note that these settings shall be applicable for the database for your server 1 app.
+3. Open the folder path *server_1 > config* and change to your own database settings in the file “dbaccess.php”. Note that these settings shall be applicable for the database for your server 1 app.
 
 4. In the same config folder for the server 1 app, open the file “settings.ini” and change the API URLs to suit your own server paths to each file. Note! Ensure you only change the URL:
 
