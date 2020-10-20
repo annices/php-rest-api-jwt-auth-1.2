@@ -1,0 +1,206 @@
+/* 
+    Created: 2019
+    Author: Annice Strömberg
+*/
+
+    /* General page properties. */
+    body {
+      font : 14px 'Verdana', Helvetica, Sans-serif;
+      width: 65%;
+      padding-top : 20px;
+      padding-bottom : 30px;
+      margin: auto;
+    }
+
+    /* Link properties. */
+    a, a:link, a:visited {
+      color: #1b6f90;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #1b6f90;
+      text-decoration: underline;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
+    hr.dotted {
+      border-top: 1px dotted #545454;
+    }
+
+    /* Class to style submit buttons to look like text links. */
+    .submit {
+      background: none !important;
+      border: none; 
+      padding: 0 !important;
+      float: none !important;
+      margin: 0 !important;
+
+      /* Optional: */
+      font : 14px 'Verdana', Helvetica, Sans-serif; /* Input has OS specific font-family. */
+      color: #1b6f90 !important;
+      cursor: pointer;
+    }
+    .submit:hover {
+      text-decoration: underline;
+    }
+
+    .menuoptions {
+      float: right;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    /* Properties for feedback msg on invalid inputs. */
+    .errormsg {
+      color: #CB3B3C;
+      font-weight: bold;
+    }
+    .successmsg {
+      color: #11a162;
+      font-weight: bold;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    input[type=text], input[type=password], input[type=email], select, textarea {
+      font : 14px 'Verdana', Helvetica, Sans-serif;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+
+    input[type=submit] {
+      background-color: #1b6f90;
+      color: white;
+      padding: 12px 30px;
+      margin-left: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+
+    #container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+      vertical-align: middle;
+    }
+
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 10px;
+    }
+
+    /* Clear floats after the columns. */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Generic table styling for desktops/laptops. */
+    table { 
+      width: 100%; 
+      border-collapse: collapse;
+    }
+    /* Zebra striping. */
+    tr:nth-of-type(odd) { 
+      background: #eee; 
+    }
+    th { 
+      background: #aaa; 
+      color: white; 
+      font-weight: bold;
+    }
+    td, th { 
+      padding: 15px; 
+      text-align: left; 
+    }
+
+
+/* Max page width before responsive table is triggered. This query will take effect for any screen
+smaller than 1000 px and also iPads specifically. */
+@media screen and (max-width: 1000px), (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  body {
+    font : 14px 'Verdana', Helvetica, Sans-serif;
+    width: 90%;
+    padding-top : 20px;
+    padding-bottom : 30px;
+    margin: auto;
+  }
+
+  #container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+  }
+
+  /* Force table to not act like tables anymore. */
+  table, thead, tbody, th, td, tr { 
+    display: block;
+    border-radius: 5px;
+  }
+  
+  /* Hide table headers (but not display: none;, for accessibility). */
+  thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  td { 
+    /* Behave like a "row". */
+    border: none;
+    border-bottom: 1px dotted #ccc; 
+    position: relative;
+    padding-left: 30%; 
+  }
+  
+  td:before { 
+    /* Now like a table header. */
+    position: absolute;
+    /* Top/left values mimic padding. */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+  /* Label the data. */
+  td:nth-of-type(1):before { content: "Firstname:"; font-weight: bold; }
+  td:nth-of-type(2):before { content: "Lastname:"; font-weight: bold; }
+  td:nth-of-type(3):before { content: "Email:"; font-weight: bold; }
+  td:nth-of-type(4):before { content: "Password:"; font-weight: bold; }
+
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+}
