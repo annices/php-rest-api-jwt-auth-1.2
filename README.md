@@ -55,11 +55,11 @@ This section illustrates the context flow when data is exchanged between two ide
 ---
 
 # 6 User interface
-Screentshot of the create admin page on initial startup:
+Screenshot of the create admin page on initial startup:
 
 <img src="https://diagrams.annice.se/php-rest-api-jwt-auth-1.2/gui-create-admin.png" alt="" width="600">
 
-Screentshot of the update admin page to send user details from the server 1 app to the server 2 app:
+Screenshot of the update admin page to send user details from the server 1 app to the server 2 app:
 
 <img src="https://diagrams.annice.se/php-rest-api-jwt-auth-1.2/gui-update-admin.png" alt="" width="600">
 
